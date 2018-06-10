@@ -1,6 +1,6 @@
 # 秒杀系统的实现
 
-###使用springBoot+mybatis实现
+### 使用springBoot+mybatis实现
 
 **主要使用技术：**
 
