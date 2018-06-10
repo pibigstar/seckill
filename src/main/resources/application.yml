@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/seckill?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    data-username: root
+    data-password: 123456
+    
+## Mybatis 配置
+mybatis:
+  type-aliases-package: com.pibigstar.domain
+  configuration:
+    map-underscore-to-camel-case: true #开启驼峰命名
