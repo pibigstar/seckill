@@ -1,9 +1,20 @@
+server:
+  port: 8080
+
+
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/seckill?useUnicode=true&characterEncoding=utf-8&useSSL=false
     data-username: root
     data-password: 123456
+  #######静态资源访问配置#######
+  mvc:
+    static-path-pattern: /**
+  resources:
+    static-locations: classpath:/static/
+  thymeleaf:
+    cache: false #开启模板热部署
     
 ## Mybatis 配置
 mybatis:

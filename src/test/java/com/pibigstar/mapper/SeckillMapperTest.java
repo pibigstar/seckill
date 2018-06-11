@@ -1,4 +1,4 @@
-package com.pibigstar.test;
+package com.pibigstar.mapper;
 
 import java.util.Date;
 import java.util.List;

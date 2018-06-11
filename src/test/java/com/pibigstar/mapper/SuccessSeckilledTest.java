@@ -1,4 +1,4 @@
-package com.pibigstar.test;
+package com.pibigstar.mapper;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

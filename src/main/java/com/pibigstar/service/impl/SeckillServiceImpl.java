@@ -7,7 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.util.DigestUtils;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.pibigstar.domain.Seckill;
 import com.pibigstar.domain.SuccessKilled;
@@ -61,6 +61,7 @@ public class SeckillServiceImpl implements SeckillSecvice{
 	}
 
 	@Override
+	@Transactional
 	public SeckillExecution executeSeckill(long seckillId, long userPhone, String md5)
 			throws SeckillException, RepeatkillException, SeckillCloseException {
 		
