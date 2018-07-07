@@ -18,6 +18,6 @@ spring:
     
 ## Mybatis 配置
 mybatis:
-  type-aliases-package: com.pibigstar.domain
+  type-aliases-package: com.pibigstar.seckill.domain
   configuration:
     map-underscore-to-camel-case: true #开启驼峰命名
